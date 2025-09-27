@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieTrail | Follow the Trail, Taste the World</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font for a modern look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7; /* Light neutral background */
+        }
+        /* Custom Red color matching the logo's red element */
+        .color-red {
+            color: #E2443B; /* Custom red */
+        }
+        .bg-red {
+            background-color: #E2443B; /* Custom red */
+        }
+        .text-dark-gray {
+             color: #333333;
+        }
+        /* Style for the button hover effect */
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(226, 68, 59, 0.5), 0 4px 6px -2px rgba(226, 68, 59, 0.05);
+        }
+    </style>
+</head>
+<body class="text-dark-gray">
+
+    <!-- Navigation/Header -->
+    <header class="sticky top-0 z-10 bg-white shadow-md" id="home">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo Area -->
+            <a href="#hero" class="flex items-center space-x-2">
+                <!-- Using the uploaded logo file name -->
+                <img src="logo.png" alt="FoodieTrail Logo" class="h-8 sm:h-10">
+            </a>
+            <!-- CTA Button (Visible on larger screens) -->
+            <a href="#home" class="hidden sm:inline-block bg-red color-red text-white py-2 px-6 rounded-full font-semibold shadow-lg hover:shadow-xl cta-button">
+                Download Now
+            </a>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section (Unique Value Proposition Upfront) -->
+    <section id="hero" class="relative overflow-hidden pt-16 pb-20 sm:pt-24 sm:pb-32 lg:pt-32 lg:pb-40 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
+            <!-- Text Content -->
+            <div class="lg:w-1/2 lg:pr-12 text-center lg:text-left mb-12 lg:mb-0">
+                <p class="text-lg font-semibold color-red mb-3">YOUR ULTIMATE FOOD COMPANION</p>
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6 text-dark-gray">
+                    Stop Searching. <span class="color-red">Start Tasting.</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-lg mx-auto lg:mx-0">
+                    Tired of endless scrolling? FoodieTrail instantly uncovers local favorites, hidden street food gems, and trending dining spots around you.
+                </p>
+
+                <!-- Primary CTA -->
+                <div id="download" class="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="bg-red text-white py-3 px-8 rounded-full text-lg font-bold shadow-2xl hover:bg-red-700 cta-button transition duration-300">
+                        Download on the App Store
+                    </a>
+                    <a href="#" class="bg-gray-200 text-dark-gray py-3 px-8 rounded-full text-lg font-bold shadow-md hover:bg-gray-300 cta-button transition duration-300">
+                        Get it on Google Play
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visual/Image Placeholder (Mockup of App) -->
+            <div class="lg:w-1/2 relative">
+                <!-- Using a placeholder for a visually engaging app screenshot -->
+                <img src="home.jpg" alt="FoodieTrail App Screenshot Mockup" class="w-full max-w-xs sm:max-w-sm lg:max-w-md mx-auto rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.2)] transform hover:scale-[1.02] transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Features/Benefits Section (Engaging & Visual) -->
+    <section id="features" class="py-20 sm:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-extrabold mb-4 text-dark-gray">What You'll Discover</h2>
+            <p class="text-xl text-gray-600 mb-16">Follow the trail, taste the world with these powerful tools.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1: Discovery -->
+                <div class="p-8 bg-white rounded-xl shadow-lg transform hover:scale-[1.03] transition duration-500">
+                    <div class="text-5xl mb-4">📍</div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark-gray">Uncover Hidden Gems</h3>
+                    <p class="text-gray-600">
+                        Our smart algorithm suggests local favorites and secret food trails that traditional review sites miss. Be the first to try the next big thing.
+                    </p>
+                </div>
+
+                <!-- Feature 2: Trending Spots -->
+                <div class="p-8 bg-white rounded-xl shadow-lg transform hover:scale-[1.03] transition duration-500">
+                    <div class="text-5xl mb-4">🔥</div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark-gray">Trending Food Spots</h3>
+                    <p class="text-gray-600">
+                        See what's hot right now! Find the most reviewed and talked-about cafes, restaurants, and street food stalls updated in real-time.
+                    </p>
+                </div>
+
+                <!-- Feature 3: Community & Review -->
+                <div class="p-8 bg-white rounded-xl shadow-lg transform hover:scale-[1.03] transition duration-500">
+                    <div class="text-5xl mb-4">⭐</div>
+                    <h3 class="text-2xl font-bold mb-3 text-dark-gray">Rate, Review & Share</h3>
+                    <p class="text-gray-600">
+                        Share your journey with fellow foodies. Quick rating, detailed reviews, and easy photo uploads keep the community vibrant and honest.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Testimonial/Social Proof Section -->
+    <section class="py-20 sm:py-24">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-10 text-dark-gray">What Our Foodies Say</h2>
+            <div class="bg-red/10 p-10 rounded-xl shadow-inner border-l-4 border-red">
+                <p class="text-xl italic text-gray-700 mb-6">
+                    "I used to waste so much time deciding where to eat. FoodieTrail cut that time in half and introduced me to the best taco truck I've ever found! It truly is the ultimate food companion."
+                </p>
+                <p class="font-semibold text-lg color-red">— Sarah K., Food Blogger</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Final Call to Action -->
+    <section class="bg-red py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">Ready to Follow the Trail?</h2>
+            <p class="text-xl text-red-100 mb-10">Don't miss out on your next favorite meal. Download FoodieTrail today!</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="bg-white color-red py-3 px-8 rounded-full text-lg font-bold shadow-2xl hover:shadow-3xl cta-button transition duration-300">
+                    Download on the App Store
+                </a>
+                <a href="#" class="bg-gray-800 text-white py-3 px-8 rounded-full text-lg font-bold shadow-2xl hover:bg-gray-900 cta-button transition duration-300">
+                    Get it on Google Play
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Footer and Contact Information -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About -->
+            <div>
+                <p>FoodieTrail</p>
+                <br/>
+                <p class="text-gray-400 text-sm">FoodieTrail is dedicated to connecting you with the best dining experiences, from local street food to upscale restaurants. Follow the trail, taste the world!</p>
+            </div>
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 color-red">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#features" class="hover:text-white transition">Features</a></li>
+                    <li><a href="#" class="hover:text-white transition">Download</a></li>
+                    <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Contact -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4 color-red">Get In Touch</h4>
+                <p class="text-sm text-gray-400">Email: support@foodietrail.com</p>
+                <p class="text-sm text-gray-400">Press: press@foodietrail.com</p>
+                <p class="text-sm text-gray-400">© 2025 FoodieTrail. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
